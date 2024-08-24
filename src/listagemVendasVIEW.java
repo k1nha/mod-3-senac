@@ -164,26 +164,26 @@ public class listagemVendasVIEW extends javax.swing.JFrame {
         });
     }
     
-//     private void listarProdutosVendidos() {
-//        try {
-//            ProdutosDAO produtosdao = new ProdutosDAO();
-//            DefaultTableModel model = (DefaultTableModel) listarVendasProdutos.getModel();
-//            model.setNumRows(0);
-//
-//            ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutosVendidos();
-//
-//            for (int i = 0; i < listagem.size(); i++) {
-//                model.addRow(new Object[]{
-//                    listagem.get(i).getId(),
-//                    listagem.get(i).getNome(),
-//                    listagem.get(i).getValor(),
-//                    listagem.get(i).getStatus()
-//                });
-//            }
-//        } catch (Exception e) {
-//            System.out.println("Erro ao listar produtos vendidos: " + e.getMessage());
-//        }
-//    }
+     private void listarProdutosVendidos() {
+        try {
+            ProdutosDAO produtosdao = new ProdutosDAO();
+            DefaultTableModel model = (DefaultTableModel) listarVendasProdutos.getModel();
+            model.setNumRows(0);
+
+            ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutosVendidos();
+
+            for (int i = 0; i < listagem.size(); i++) {
+                model.addRow(new Object[]{
+                    listagem.get(i).getId(),
+                    listagem.get(i).getNome(),
+                    listagem.get(i).getValor(),
+                    listagem.get(i).getStatus()
+                });
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao listar produtos vendidos: " + e.getMessage());
+        }
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
