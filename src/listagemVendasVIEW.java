@@ -18,7 +18,7 @@ public class listagemVendasVIEW extends javax.swing.JFrame {
      */
     public listagemVendasVIEW() {
         initComponents();
-//        this.listarProdutosVendidos();
+        this.listarProdutosVendidos();
     }
 
     /**
